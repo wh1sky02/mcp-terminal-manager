@@ -4,6 +4,14 @@ A professional Model Context Protocol (MCP) server that provides robust terminal
 
 ## Usage
 
+### Quick Setup
+
+To automatically configure the MCP server for Claude Desktop (supported on Mac, Windows, and compatible Linux setups):
+
+```bash
+npx mcp-terminal-manager setup
+```
+
 ### Run Locally (Development)
 
 You can run the server directly from the source directory:
