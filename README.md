@@ -4,35 +4,24 @@ A professional Model Context Protocol (MCP) server that provides robust terminal
 
 ## Usage
 
-### Quick Setup
+### Quick Start (Local Setup)
 
-To automatically configure the MCP server for Claude Desktop (supported on Mac, Windows, and compatible Linux setups):
-
-```bash
-npx mcp-terminal-manager setup
-```
-
-### Run Locally (Development)
-
-You can run the server directly from the source directory:
+To use this MCP server, clone the repository and run the setup wizard. This will automatically configure your Claude Desktop (or other compatible clients) to use the server from your local machine.
 
 ```bash
-# Install dependencies
+# 1. Clone the repository
+git clone https://github.com/wh1sky02/mcp-terminal-manager.git
+cd mcp-terminal-manager
+
+# 2. Install dependencies and build
 npm install
-
-# Build the project
 npm run build
 
-# Run the server
-npx .
+# 3. Run the setup wizard
+npx . setup
 ```
 
-### Install from GitHub
-
-```bash
-npm install -g git+https://github.com/wh1sky02/mcp-terminal-manager.git
-mcp-terminal-manager
-```
+The setup wizard will detect your operating system and add the necessary configuration to your Claude Desktop config file.
 
 ## Features
 

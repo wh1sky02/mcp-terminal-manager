@@ -52,9 +52,16 @@ export async function runSetup() {
         process.exit(1);
     }
 
+    // Use the current executable path for the config
+    // This allows local installation support
+    const scriptPath = process.argv[1];
+
+    // Ensure we are using the absolute path
+    const absoluteScriptPath = path.resolve(scriptPath);
+
     const mcpConfig = {
-        command: "npx",
-        args: ["-y", "mcp-terminal-manager"]
+        command: "node",
+        args: [absoluteScriptPath]
     };
 
     let existingConfig: any = { mcpServers: {} };
