@@ -1,20 +1,20 @@
-# terminal-session-mcp
+# MCP Terminal Manager
 
-An MCP server that provides full terminal access with session management.
+A professional Model Context Protocol (MCP) server that provides robust terminal access, session management, and system monitoring capabilities.
 
 ## Installation
 
 You can run this server directly using `npx`:
 
 ```bash
-npx terminal-session-mcp
+npx mcp-terminal-manager
 ```
 
 Or install it globally:
 
 ```bash
-npm install -g terminal-session-mcp
-terminal-session-mcp
+npm install -g mcp-terminal-manager
+mcp-terminal-manager
 ```
 
 ## Features
@@ -33,7 +33,7 @@ terminal-session-mcp
 
 ## Configuration
 
-The server runs on stdio. Configure your MCP client (like Claude or Antigravity) to run `npx terminal-session-mcp` (or the path to the executable if installed locally).
+The server runs on stdio. Configure your MCP client (like Claude or Antigravity) to run `npx mcp-terminal-manager` (or the path to the executable if installed locally).
 
 ## Dependencies
 

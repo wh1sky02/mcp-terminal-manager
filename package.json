@@ -1,10 +1,14 @@
 {
-  "name": "terminal-session-mcp",
+  "name": "mcp-terminal-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "Professional MCP server for terminal session management and system operations",
   "type": "module",
   "bin": {
-    "terminal-session-mcp": "./dist/index.js"
+    "mcp-terminal-manager": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wh1sky02/mcp-terminal-manager.git"
   },
   "files": [
     "dist"
