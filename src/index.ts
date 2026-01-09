@@ -25,7 +25,7 @@ const sessions: Map<string, Session> = new Map();
 
 const server = new Server(
     {
-        name: "terminal-session-mcp",
+        name: "mcp-terminal-manager",
         version: "1.0.0",
     },
     {
