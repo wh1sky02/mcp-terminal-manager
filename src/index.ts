@@ -10,10 +10,12 @@ import * as pty from "node-pty";
 import * as os from "os";
 import * as fs from "fs";
 import * as path from "path";
-// @ts-ignore
-import pdf from "pdf-parse";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const pdf = require("pdf-parse");
 import * as XLSX from "xlsx";
 import Tesseract from "tesseract.js";
+import { runSetup } from "./setup.js";
 
 interface Session {
     id: string;
@@ -400,6 +402,12 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 });
 
 async function run() {
+    const args = process.argv.slice(2);
+    if (args.includes("setup")) {
+        await runSetup();
+        process.exit(0);
+    }
+
     const transport = new StdioServerTransport();
     await server.connect(transport);
     console.error("Terminal MCP Server running on stdio");
