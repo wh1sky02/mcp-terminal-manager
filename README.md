@@ -2,18 +2,27 @@
 
 A professional Model Context Protocol (MCP) server that provides robust terminal access, session management, and system monitoring capabilities.
 
-## Installation
+## Usage
 
-You can run this server directly using `npx`:
+### Run Locally (Development)
+
+You can run the server directly from the source directory:
 
 ```bash
-npx mcp-terminal-manager
+# Install dependencies
+npm install
+
+# Build the project
+npm run build
+
+# Run the server
+npx .
 ```
 
-Or install it globally:
+### Install from GitHub
 
 ```bash
-npm install -g mcp-terminal-manager
+npm install -g git+https://github.com/wh1sky02/mcp-terminal-manager.git
 mcp-terminal-manager
 ```
 
